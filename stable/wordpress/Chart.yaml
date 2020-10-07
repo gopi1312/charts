@@ -14,7 +14,6 @@ keywords:
   - web
   - application
   - php
-  - mariadb
 home: http://www.wordpress.com/
 sources:
   - https://github.com/bitnami/bitnami-docker-wordpress
