@@ -10,6 +10,8 @@ metadata:
     {{- if .Values.metrics.serviceMonitor.additionalLabels }}
     {{- include "wordpress.tplValue" (dict "value" .Values.metrics.serviceMonitor.additionalLabels "context" $) | nindent 4 }}
     {{- end }}
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
 spec:
   endpoints:
     - port: metrics
