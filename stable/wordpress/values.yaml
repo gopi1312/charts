@@ -382,6 +382,7 @@ mariadb:
       size: 8Gi
 
 ##
+##
 ## External Database Configuration
 ##
 ## All of these values are only used when mariadb.enabled is set to false
